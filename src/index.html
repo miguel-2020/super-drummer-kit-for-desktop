@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link description meta tag -->
+
+    <meta property="og:type"               content="Project" />
+    <meta property="og:title"              content="super-drummer-kit" />
+    <meta property="og:description"        content="creative drum using CSS,HTML and JavaScript" />
+    <meta property="og:image"              content="./images/drum.png" />
+    <!-- Tab icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/android-chrome-512x512.png">
+<link rel="manifest" href="./images/favicon_io/site.webmanifest">
+<!-- Project description -->
+<meta name="description" content="Beautiful drummer kit using HTML,CSS, JavaScript">
+<meta name="keywords" content="HTML, CSS, JavaScript,programming,music">
+<meta name="author" content="Miguel Ortiz">
+<!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Drumkit</title>
+  </head>
+  <body>
+
+    <!-- STARTUP COMPONENT FOR REFERENCE -->
+  
+<!--TOMS -->
+ <!--  <div class="outermost-circle active" style="--outermost-border-color:blue; --outermost-bg:green;--size:8;">
+    <div class="outer-circle" style="--outer-border-color:#CECECE; --size:8;" data-name="hihat"></div>
+  </div> -->
+  
+<!--cymbals -->
+ <!--  <div class="outermost-circle cymbals-outermost active" style="--outermost-border-color:none; --outermost-bg:green;--size:5;">
+    <div class="outer-circle cymbals-outer" style="--outer-border-color:#CECECE; --size:5;" data-name="hihat"></div>
+  <div class="cymbals-top"></div>
+  </div>
+   -->
+
+   <!-- STARTUP COMPONENT FOR REFERENCE END -->
+
+
+  
+   <div class="drum" id="drum">
+    <!-- KICK -->
+     <div class="kick">
+       <div class="kick__top-border"></div>
+        <small class="copyrights">copyright&copy;2024;<br>Designed by Miguel Ortiz</small>
+        <div class="kick__bottom-border">
+          <small class="kick__text">kick</small>
+        </div>
+     </div>
+     
+ <!--  cymbals -->
+  <!--    cymbal 1 -->
+      <div data-id="hihat-open-audio" class="outermost-circle cymbals-1 cymbals-outermost" style="--outermost-border-color:none; --outermost-bg:green;--size:4;">
+     <div class="outer-circle cymbals-outer" style="--outer-border-color:#CECECE; --size:5;" data-name="hh open"></div>
+       <div class="cymbals-top"></div>
+       </div>
+     
+      <!--    cymbal 2 -->
+      <div data-id="hihat-closed-audio" class="outermost-circle cymbals-2 cymbals-outermost" style="--outermost-border-color:none; --outermost-bg:green;--size:4;">
+     <div class="outer-circle cymbals-outer" style="--outer-border-color:#CECECE; --size:5;" data-name="hh closed"></div>
+       <div class="cymbals-top"></div>
+       </div>
+     
+      <!--    cymbal 3 -->
+      <div data-id="clash-audio" class="outermost-circle cymbals-3 cymbals-outermost" style="--outermost-border-color:none; --outermost-bg:green;--size:5;">
+     <div class="outer-circle cymbals-outer" style="--outer-border-color:#CECECE; --size:5;" data-name="crash"></div>
+       <div class="cymbals-top"></div>
+       </div>
+     
+      <!--    cymbal 4 -->
+      <div data-id="ride-audio" class="outermost-circle cymbals-4 cymbals-outermost" style="--outermost-border-color:none; --outermost-bg:green;--size:5;">
+     <div class="outer-circle cymbals-outer" style="--outer-border-color:#CECECE; --size:5;" data-name="ride"></div>
+       <div class="cymbals-top"></div>
+       </div>
+     
+    <!--  TOMS -->
+     
+     <!--SNARE -->
+ <div data-id="snare-audio" class="outermost-circle tom-1" style="--outermost-border-color:blue; --outermost-bg:green;--size:3.5;">
+     <div class="outer-circle" style="--outer-border-color:#CECECE; --size:3.5;" data-name="snare"></div>
+   </div>
+     
+         <!--TOM 2 -->
+ <div data-id="tom-1-audio" class="outermost-circle tom-2" style="--outermost-border-color:blue; --outermost-bg:green;--size:3;">
+     <div class="outer-circle" style="--outer-border-color:#CECECE; --size:2.5;" data-name="tom 1"></div>
+   </div>
+     
+             <!--TOM 3 -->
+ <div data-id="tom-2-audio" class="outermost-circle tom-3" style="--outermost-border-color:blue; --outermost-bg:green;--size:3;">
+     <div class="outer-circle" style="--outer-border-color:#CECECE; --size:2.5;" data-name="tom 2"></div>
+   </div>
+     
+     
+                 <!--TOM 4 -->
+ <div data-id="tom-3-audio" class="outermost-circle tom-4" style="--outermost-border-color:blue; --outermost-bg:green;--size:3.5;">
+     <div class="outer-circle" style="--outer-border-color:#CECECE; --size:3.5;" data-name="tom 3"></div>
+   </div>
+     
+  <!-- PEDAL -->
+     <!-- <hr> -->
+     <div data-id="kick-audio" class="pedal">
+       <div class="line"></div>
+       <div class="line"></div>
+       <div class="beater-holder"></div>
+       <svg class="beater"   viewBox="0 0 24 24" id="cylinder-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+         <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+           
+         </g><g id="SVGRepo_iconCarrier"><path id="primary" d="M12,2C8.52,2,5,2.93,5,5V19c0,2.07,3.52,3,7,3s7-.93,7-3V5C19,2.93,15.48,2,12,2Z" ></path><ellipse id="secondary" cx="12" cy="5" rx="7" ry="3" style="fill: #ffffff;"></ellipse></g></svg>                
+ 
+     </div>
+
+     
+ <!--  END OF DRUM CONTAINER -->
+   </div>
+
+   <!-- Audio -->
+    <div class="audio">
+      <audio class="kick-audio" src="./sounds/Kick.wav"></audio>
+      <audio class="hihat-open-audio" src="./sounds/Hat_Open.wav"></audio>
+      <audio class="hihat-closed-audio" src="./sounds/Hat_Closed.wav"></audio>
+      <audio class="clash-audio" src="./sounds/Crash.wav"></audio>
+      <audio class="ride-audio" src="./sounds/ride.wav"></audio>
+      <audio class="snare-audio" src="./sounds/Snare.wav"></audio>
+      <audio class="tom-1-audio" src="./sounds/tom-1.wav"></audio>
+      <audio class="tom-2-audio" src="./sounds/tom-2.wav"></audio>
+      <audio class="tom-3-audio" src="./sounds/tom-3.wav"></audio>
+    </div>
+
+   
+    <script src="./js/index.js"></script>
+  </body>
+</html>
